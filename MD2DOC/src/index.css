@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: #000;
+    font-family: 'Courier New', monospace;
+  }
+}
+
+/* Green Theme */
+.green-theme {
+  --theme-color: #00ff00;
+  --theme-color-dim: #00cc00;
+  --theme-glow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  --theme-bg: #001100;
+  color: var(--theme-color);
+}
+
+/* Amber Theme */
+.amber-theme {
+  --theme-color: #ffb000;
+  --theme-color-dim: #cc8800;
+  --theme-glow: 0 0 10px #ffb000, 0 0 20px #ffb000, 0 0 30px #ffb000;
+  --theme-bg: #1a0f00;
+  color: var(--theme-color);
+}
+
+.cyber-glow {
+  text-shadow: var(--theme-glow);
+}
+
+.cyber-border {
+  border: 1px solid var(--theme-color);
+  box-shadow: 0 0 10px var(--theme-color), inset 0 0 10px var(--theme-color);
+}
+
+.matrix-bg {
+  background-color: var(--theme-bg);
+}
+
+.terminal-shadow {
+  box-shadow: 0 0 20px rgba(var(--theme-color), 0.2);
+}
+
+/* Prose Styles */
+.green-theme .prose,
+.amber-theme .prose {
+  --tw-prose-invert-body: var(--theme-color);
+  --tw-prose-invert-headings: var(--theme-color);
+  --tw-prose-invert-links: var(--theme-color);
+  --tw-prose-invert-bold: var(--theme-color);
+  --tw-prose-invert-counters: var(--theme-color);
+  --tw-prose-invert-bullets: var(--theme-color);
+  --tw-prose-invert-hr: var(--theme-color-dim);
+  --tw-prose-invert-quotes: var(--theme-color);
+  --tw-prose-invert-quote-borders: var(--theme-color-dim);
+  --tw-prose-invert-captions: var(--theme-color-dim);
+  --tw-prose-invert-code: var(--theme-color);
+  --tw-prose-invert-pre-code: var(--theme-color);
+  --tw-prose-invert-pre-bg: var(--theme-bg);
+  --tw-prose-invert-th-borders: var(--theme-color-dim);
+  --tw-prose-invert-td-borders: var(--theme-color-dim);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-color-dim);
+}
