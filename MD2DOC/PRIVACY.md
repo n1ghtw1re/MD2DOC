@@ -62,6 +62,10 @@ We do not integrate with or use any third-party services that could collect user
 - No tracking scripts
 - No social media integrations
 
+### External Links
+
+Please note that our website may contain links to external websites (e.g., social media platforms or support pages in the footer). These links are provided for convenience. If you click on these links, you will be directed to a third-party website. We do not control these external sites and are not responsible for their privacy practices. We encourage you to review the privacy policies of any third-party websites you visit.
+
 ## Updates to Privacy Policy
 
 Any changes to this privacy policy will be posted on this page. As we don't collect any user data, changes to this policy will primarily reflect:

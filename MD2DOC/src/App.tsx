@@ -72,8 +72,8 @@ function App() {
     
     // Sanitize the content
     const sanitizedHtml = DOMPurify.sanitize(clone.innerHTML, {
-      ALLOWED_TAGS: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'a', 'ul', 'ol', 'li', 'code', 'pre', 'blockquote', 'em', 'strong', 'del'],
-      ALLOWED_ATTR: ['href']
+      ALLOWED_TAGS: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'a', 'ul', 'ol', 'li', 'code', 'pre', 'blockquote', 'em', 'strong', 'del', 'img', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'hr', 'br'],
+      ALLOWED_ATTR: ['href', 'src', 'alt']
     });
     
     clone.innerHTML = sanitizedHtml;

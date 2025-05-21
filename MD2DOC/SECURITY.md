@@ -22,10 +22,10 @@
 - Safe storage practices
 
 ### Local Storage
-- Encrypted when supported
-- Session-based
+- Relies on browser and underlying operating system for storage security; data is not separately encrypted by the application.
+- Persistent until cleared: Data remains in local storage until explicitly cleared by the user (either through the "Clear" button in the application or by clearing browser site data).
 - No sensitive data storage
-- Automatic clearing
+- Content is cleared when the user uses the 'Clear' function in the app or clears their browser's site data.
 
 ## Reporting a Vulnerability
 
